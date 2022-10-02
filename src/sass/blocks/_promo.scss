@@ -10,7 +10,7 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
-        @include before_circle (-25%, 0px);
+        @include before_circle (-25%, );
     }
     &__btns {
         margin-top: 25px;
