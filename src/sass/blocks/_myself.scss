@@ -1,5 +1,5 @@
 .myself {
-    min-height: 100vh;
+    min-height: 600px;
     padding-top: 120px;
     padding-right: 100px;
     display: grid;
@@ -10,7 +10,7 @@
         margin: 6px 0 6px 12px;
         position: relative;
         z-index: 2;
-        @include before_circle (-25%, -11px);
+        @include before_circle (-25%, -11px, none);
     }
 
     &__divider {
@@ -48,7 +48,7 @@
             padding: 15px 20px 0 15px;
             position: relative;
             z-index: 2;
-            @include before_circle (0%, 0px);
+            @include before_circle (0%, 0px, none);
         }
     }
     &__descr {
@@ -57,3 +57,4 @@
         line-height: 18px;
     }
 }
+

@@ -1,0 +1,95 @@
+.resume {
+    padding-top: 120px;
+    position: relative;
+    &__title {
+        text-align: center;
+        @include before_circle (114px, 50%, translateX(-50%));
+
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__divider {
+        margin: 25px auto;
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+    }
+    &__wrapper {
+        padding: 35px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 16px); /* сколько контента - столько и будет тянуться палочка */
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 43px;
+            top: 61px;
+            background-color: #000;
+        }
+        &-head {
+            padding: 45px 0 0 100px;
+            position: relative;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+
+        }
+        &-icon {
+            position: absolute;
+            top: 57px;
+            left: 63px;
+            @include before_circle (-14px, -21px, none);
+        }
+        &-location {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+}
