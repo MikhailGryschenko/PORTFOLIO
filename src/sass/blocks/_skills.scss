@@ -49,7 +49,9 @@
         column-gap: 45px;
         row-gap: 30px;
     }
-
+    &__level {
+        position: relative;
+    }
     &__level-head {
         display: flex;
         justify-content: space-between;
@@ -65,15 +67,20 @@
         font-weight: 500;
         line-height: 21px;
     }
+
     &__level-scale {
-        position: relative;
-    }
-    &__level-full {
         position: absolute;
         margin-top: 27px;
         width: 350px;
         height: 14px;
         background: #E8E4DE;
         border-radius: 4px;
+        span {
+            position: absolute;
+            height: 14px;
+            background: #FFA501;
+            border-radius: 4px; z-index: 2;
+        }
     }
+    
 }
