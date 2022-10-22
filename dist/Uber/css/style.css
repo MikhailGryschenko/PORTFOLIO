@@ -1,0 +1,188 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	position: relative;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	height: 50px;
+	background-color: #212121;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	margin: 0;
+	list-style-type: none; /* убрать чёрные точки в списке, которые по умолчанию */
+}
+.menu .menu_link {
+	font-size: 15px;
+	font-weight: 300;
+	color: #ffffff;
+}
+.menu .menu_item {
+	border-right: 2px dotted black;
+	padding-right: 45px;
+}
+.subheader {
+	position: absolute; 
+	margin-top: 50px;
+	width: 100%;
+	height: 84px;
+	background-color: rgba(0, 0, 0, .6);
+}
+.subheader .subheader_logo {
+	display: block; /* это НАДО, потому что ссылка - строчный элемент! */
+	max-width: 100%;  /* если поменяется логотип, то макс ширина 100% этой колонки */
+	margin-top: 16px;
+}
+.subheader .subheader_official {
+	margin-top: 6px;
+	opacity: 0.5;
+	font-size: 13px;
+	font-weight: 100;
+	color: #ffffff;
+}
+.subheader .subheader_call {
+	text-align: right;
+	margin-top: 19px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #ffffff;
+}
+.subheader .subheader_phone {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	margin-top: 8px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+	line-height: 12px;
+}
+.subheader .subheader_btn {
+	width: 178px;
+	height: 52px;
+	margin-top: 16px;
+	background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+	border: none;
+	border-radius: 4px;
+	box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	color: #ffffff;
+}
+.promo {
+	min-height: 799px;
+	background: url(../img/foto_main.png) center center/cover no-repeat;
+	padding: 150px 0 130px 0;
+}
+.promo .promo_header {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	line-height: 60px;
+	margin: 0;
+	text-align: center;
+}
+.promo .promo_subheader {
+	font-size: 36px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 36px;
+	margin: 0;
+	margin-top: 22px;
+	text-align: center;
+}
+.promo .promo_descr {
+	margin-top: 23px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #ffffff;
+	text-align: center;
+}
+.promo .promo_btn {
+	display: block;
+	margin: 115px auto 0 auto;
+	width: 265px;
+	height: 69px;
+	background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+	border: none;
+	border-radius: 4px;
+	box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	color: #ffffff;
+	text-align: center;
+}
+.start {
+	min-height: 799px;
+	padding: 70px 0 65px 0; 
+}
+.start .start_btn {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	width: 112px;
+	height: 24px;
+	background-color: #000000;
+	font-size: 11px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.start .start_header {
+	margin-top: 38px;
+	font-size: 38px;
+	line-height: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #222222;
+	text-align: center;
+}
+.start .start_item {
+	margin-top: 45px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.start .start_round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 113px;
+	height: 113px;
+	background-color: #1eacc7;
+	border-radius: 100%;
+}
+.start .start_descr {
+	width: 341px;
+	height: 142px;
+	font-size: 15px;
+	font-weight: 300;
+	color: #202020;
+	margin-left: 26px;
+	text-align: justify;
+}
+.start .start_descr .title_block {
+	width: 341px;
+	height: 142px;
+	font-size: 17px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #1eacc7;
+}
+
+
+
