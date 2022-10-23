@@ -12,6 +12,9 @@
         z-index: 2;
         @include before_circle (-25%, -11px, none);
     }
+    &__title {
+        margin-bottom: 0;
+    }
 
     &__divider {
         position: absolute;
@@ -28,7 +31,7 @@
 
 }
 .myself-photo {
-    grid-column: 1;
+    /* grid-column: 1; */
     grid-row: 1/3;
     img {
         width: 100%;
