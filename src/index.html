@@ -112,7 +112,17 @@
 
     <section class="container myself">
         <div class="myself-photo">
-            <img src="img/main_photo.jpg" alt="my photo">
+<!--             <img srcset="img/main_photo-min.jpg 300w,
+                        img/main_photo.jpg 400w"
+                sizes="(max-width: 576px) 280px,
+                (min-width: 577px) 400px"
+            src="img/main_photo.jpg" alt="my photo"> -->
+            <picture>
+                <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg"> 
+                <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                <img src="img/main_photo.jpg" alt="my photo">
+            </picture>
+
         </div>
         <div class="about">
             <div class="title title_fz16 myself__subtitle">Про меня</div>
@@ -357,7 +367,7 @@
         <div class="container">
             <h2 class="title title_fz16 portfolio__title">Портфолио</h2>
             <div class="title portfolio__subtitle">Мои работы</div>
-            <div class="price__divider"></div>
+            <div class="portfolio__divider"></div>
 
             <div class="portfolio__wrapper">
                 <a href="/Uber" class="portfolio__item">
